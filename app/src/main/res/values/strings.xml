@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Overlay Clicker</string>
+    <string name="accessibility_service_label">Overlay Clicker Touch Service</string>
+    <string name="accessibility_service_description">Allows Overlay Clicker to perform automated taps on screen at specified coordinates.</string>
+</resources>

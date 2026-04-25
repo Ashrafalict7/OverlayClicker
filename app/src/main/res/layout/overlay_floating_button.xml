@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/btnPlayPause"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="▶"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/fab_bg_idle"
+        android:elevation="8dp"/>
+
+</FrameLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/panel_bg"
+    android:padding="16dp"
+    android:elevation="14dp">
+
+    <!-- Header -->
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="10dp">
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="⚙ Overlay Clicker"
+            android:textColor="#FFFFFF" android:textSize="14sp" android:textStyle="bold"/>
+        <TextView android:id="@+id/btnClosePanel"
+            android:layout_width="30dp" android:layout_height="30dp"
+            android:text="✕" android:textColor="#CCCCCC" android:textSize="16sp"
+            android:gravity="center" android:background="@drawable/close_btn_bg"/>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="#33FFFFFF" android:layout_marginBottom="10dp"/>
+
+    <!-- Target coords -->
+    <TextView android:id="@+id/tvTargetCoords"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="🎯 Target: (0, 0)"
+        android:textColor="#88FF99" android:textSize="12sp"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="Drag red crosshair  OR  tap button below"
+        android:textColor="#77FFFFFF" android:textSize="10sp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Tap to set target -->
+    <Button android:id="@+id/btnSetTarget"
+        android:layout_width="match_parent" android:layout_height="38dp"
+        android:text="📍 Tap Screen to Set Target Point"
+        android:textSize="11sp" android:textColor="#FFFFFF"
+        android:backgroundTint="#3A7BFF"
+        android:stateListAnimator="@null"
+        android:layout_marginBottom="10dp"/>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="#33FFFFFF" android:layout_marginBottom="10dp"/>
+
+    <!-- Button Size row -->
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="BUTTON SIZE" android:textSize="10sp" android:textColor="#77FFFFFF"
+        android:letterSpacing="0.1" android:layout_marginBottom="6dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:layout_marginBottom="10dp">
+        <Button android:id="@+id/btnSizeMinus" android:layout_width="40dp"
+            android:layout_height="40dp" android:text="−" android:textSize="20sp"
+            android:textColor="#FFFFFF" android:backgroundTint="#2A2A4C"
+            android:stateListAnimator="@null" android:padding="0dp"/>
+        <TextView android:id="@+id/tvSizeValue" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:text="120px" android:textColor="#FFFFFF"
+            android:textSize="13sp" android:gravity="center"/>
+        <Button android:id="@+id/btnSizePlus" android:layout_width="40dp"
+            android:layout_height="40dp" android:text="+" android:textSize="20sp"
+            android:textColor="#FFFFFF" android:backgroundTint="#2A2A4C"
+            android:stateListAnimator="@null" android:padding="0dp"/>
+    </LinearLayout>
+
+    <!-- Transparency row -->
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="TRANSPARENCY" android:textSize="10sp" android:textColor="#77FFFFFF"
+        android:letterSpacing="0.1" android:layout_marginBottom="6dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:layout_marginBottom="10dp">
+        <Button android:id="@+id/btnAlphaMinus" android:layout_width="40dp"
+            android:layout_height="40dp" android:text="−" android:textSize="20sp"
+            android:textColor="#FFFFFF" android:backgroundTint="#2A2A4C"
+            android:stateListAnimator="@null" android:padding="0dp"/>
+        <TextView android:id="@+id/tvAlphaValue" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:text="85%" android:textColor="#FFFFFF"
+            android:textSize="13sp" android:gravity="center"/>
+        <Button android:id="@+id/btnAlphaPlus" android:layout_width="40dp"
+            android:layout_height="40dp" android:text="+" android:textSize="20sp"
+            android:textColor="#FFFFFF" android:backgroundTint="#2A2A4C"
+            android:stateListAnimator="@null" android:padding="0dp"/>
+    </LinearLayout>
+
+    <!-- Click Speed row -->
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="CLICK SPEED  (faster ▶ slower)" android:textSize="10sp"
+        android:textColor="#77FFFFFF" android:letterSpacing="0.1"
+        android:layout_marginBottom="6dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:gravity="center_vertical"
+        android:layout_marginBottom="14dp">
+        <Button android:id="@+id/btnSpeedMinus" android:layout_width="40dp"
+            android:layout_height="40dp" android:text="−" android:textSize="20sp"
+            android:textColor="#FFFFFF" android:backgroundTint="#2A2A4C"
+            android:stateListAnimator="@null" android:padding="0dp"/>
+        <TextView android:id="@+id/tvSpeedValue" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_weight="1"
+            android:text="1.0s" android:textColor="#FFFFFF"
+            android:textSize="13sp" android:gravity="center"/>
+        <Button android:id="@+id/btnSpeedPlus" android:layout_width="40dp"
+            android:layout_height="40dp" android:text="+" android:textSize="20sp"
+            android:textColor="#FFFFFF" android:backgroundTint="#2A2A4C"
+            android:stateListAnimator="@null" android:padding="0dp"/>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="#33FFFFFF" android:layout_marginBottom="10dp"/>
+
+    <!-- Click Once -->
+    <Button android:id="@+id/btnClickOnce"
+        android:layout_width="match_parent" android:layout_height="40dp"
+        android:text="👆 Click Once Now"
+        android:textSize="12sp" android:textColor="#FFFFFF"
+        android:backgroundTint="#FF6B35"
+        android:stateListAnimator="@null"
+        android:layout_marginBottom="6dp"/>
+
+    <!-- Start / Stop auto-click -->
+    <Button android:id="@+id/btnStartStop"
+        android:layout_width="match_parent" android:layout_height="44dp"
+        android:text="▶ Start Auto-Click"
+        android:textSize="13sp" android:textStyle="bold" android:textColor="#FFFFFF"
+        android:backgroundTint="#1DB954"
+        android:stateListAnimator="@null"/>
+
+</LinearLayout>
